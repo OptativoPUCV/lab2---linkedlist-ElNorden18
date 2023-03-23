@@ -69,7 +69,7 @@ void pushFront(List * list, void * data) {
   nuevoDato = createNode(data);
   if(list == NULL)
     nuevoDato = list->head;
-  *nuevoDato = list->head;
+  nuevoDato->data = list->head;
 }
 
 void pushBack(List * list, void * data) {
