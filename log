@@ -172,3 +172,16 @@ Thu 23 Mar 2023 04:03:53 PM UTC:
  tests:  9|3
 total_score: 35/70
 618cfb0
+Thu 23 Mar 2023 04:10:09 PM UTC: 
+ list.c | 3 +++
+ 1 file changed, 3 insertions(+)
+In file included from test.c:5:
+list.c: In function ‘pushFront’:
+list.c:69:15: error: incompatible types when assigning to type ‘Node’ from type ‘Node *’
+   69 |   nuevoDato = createNode(data);
+      |               ^~~~~~~~~~
+list.c:70:12: error: invalid type argument of ‘->’ (have ‘Node’)
+   70 |   nuevoDato->next = list->head;
+      |            ^~
+Compilation failed
+14df08f
