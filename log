@@ -248,3 +248,15 @@ Thu 23 Mar 2023 04:14:44 PM UTC:
  tests:  9|3
 total_score: 35/70
 384de2f
+Thu 23 Mar 2023 04:15:26 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘pushFront’:
+list.c:69:26: error: dereferencing ‘void *’ pointer [-Werror]
+   69 |   nuevoDato = createNode(*data);
+      |                          ^~~~~
+list.c:69:26: error: invalid use of void expression
+cc1: all warnings being treated as errors
+Compilation failed
+bd36e71
