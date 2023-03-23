@@ -22,3 +22,18 @@ Thu 23 Mar 2023 03:45:33 PM UTC:
  tests:  1|5
 total_score: 10/70
 8e52d88
+Thu 23 Mar 2023 03:45:47 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:41:16: error: ‘list’ is a pointer; did you mean to use ‘->’?
+   41 |     return list.head;
+      |                ^
+      |                ->
+list.c:42:1: error: control reaches end of non-void function [-Werror=return-type]
+   42 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+703b37c
