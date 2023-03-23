@@ -329,3 +329,9 @@ list.c:71:27: error: ‘Node’ has no member named ‘current’
       |                           ^~
 Compilation failed
 01d6c83
+Thu 23 Mar 2023 04:22:46 PM UTC: 
+ list.c | 2 --
+ 1 file changed, 2 deletions(-)
+ tests:  9|3
+total_score: 35/70
+90a6b3d
