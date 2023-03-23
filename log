@@ -271,3 +271,13 @@ list.c:68:9: error: variable ‘nuevoDato’ set but not used [-Werror=unused-bu
 cc1: all warnings being treated as errors
 Compilation failed
 ab8eb66
+Thu 23 Mar 2023 04:16:56 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘pushFront’:
+list.c:72:16: error: incompatible types when assigning to type ‘Node’ from type ‘Node *’
+   72 |   *nuevoDato = list->head;
+      |                ^~~~
+Compilation failed
+ef54205
