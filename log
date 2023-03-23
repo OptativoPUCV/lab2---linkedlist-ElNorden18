@@ -319,3 +319,13 @@ list.c:71:17: error: incompatible types when assigning to type ‘Node’ from t
       |                 ^~~~
 Compilation failed
 08f6de7
+Thu 23 Mar 2023 04:22:07 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘pushFront’:
+list.c:71:27: error: ‘Node’ has no member named ‘current’
+   71 |     *nuevoDato= list->head->current;
+      |                           ^~
+Compilation failed
+01d6c83
