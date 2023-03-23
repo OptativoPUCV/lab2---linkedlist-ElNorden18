@@ -29,8 +29,11 @@ Node * createNode(void * data) {
 }
 
 List * createList() {
-  
-     return NULL;
+  List *vectorTmp = (List *) malloc(sizeof(List));
+  vectorTmp->head = NULL;
+  vectorTmp->tail = NULL;
+  vectorTmp->current = NULL;
+     return vectorTmp;
 }
 
 void * firstList(List * list) {
