@@ -231,3 +231,9 @@ Thu 23 Mar 2023 04:12:31 PM UTC:
  tests:  9|0
    [ INFO ] Insertando 16 a la lista (pushfront)
 7674283
+Thu 23 Mar 2023 04:12:53 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  9|3
+total_score: 35/70
+25e7eff
