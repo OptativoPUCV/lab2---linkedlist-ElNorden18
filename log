@@ -297,3 +297,9 @@ list.c:71:18: error: incompatible types when assigning to type ‘Node’ from t
       |                  ^~~~
 Compilation failed
 11d5d5d
+Thu 23 Mar 2023 04:19:14 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  9|3
+total_score: 35/70
+17f07bf
