@@ -526,3 +526,20 @@ list.c:112:27: error: ‘aux’ undeclared (first use in this function)
 list.c:112:27: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 6f0267e
+Sun 26 Mar 2023 02:23:27 AM UTC: 
+ list.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:113:25: error: assignment to ‘void *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+  113 |     list->current->data = aux;
+      |                         ^
+list.c:117:12: error: returning ‘int’ from a function with return type ‘void *’ makes pointer from integer without a cast [-Werror=int-conversion]
+  117 |     return aux;
+      |            ^~~
+list.c:113:25: error: ‘aux’ may be used uninitialized in this function [-Werror=maybe-uninitialized]
+  113 |     list->current->data = aux;
+      |     ~~~~~~~~~~~~~~~~~~~~^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+64055b0
