@@ -410,3 +410,17 @@ Sun 26 Mar 2023 12:57:19 AM UTC:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 9a8e318
+Sun 26 Mar 2023 12:58:14 AM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘pushCurrent’:
+list.c:87:25: error: dereferencing ‘void *’ pointer [-Werror]
+   87 |   list->current->data = * data;
+      |                         ^~~~~~
+list.c:87:23: error: void value not ignored as it ought to be
+   87 |   list->current->data = * data;
+      |                       ^
+cc1: all warnings being treated as errors
+Compilation failed
+f614e7c
