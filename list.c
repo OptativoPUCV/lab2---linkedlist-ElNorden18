@@ -107,7 +107,7 @@ void * popBack(List * list) {
 void * popCurrent(List * list) {
   if(list == NULL)
     return NULL;
-  return NULL
+  return NULL;
 }
 
 void cleanList(List * list) {
